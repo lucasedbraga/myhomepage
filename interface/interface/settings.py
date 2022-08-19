@@ -7,36 +7,28 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/topics/settings/
 """
 
-import dj_database_url
+
 import os
-from django.test.runner import DiscoverRunner
+import django_on_heroku
 from pathlib import Path
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
-
-IS_HEROKU = "DYNO" in os.environ
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 SECRET_KEY = 'django-insecure-4pe*4_r6m-4y1fr8b+-^=2r1a@=kr1*tt248jmaj(7p23+ttnv'
 
-if 'SECRET_KEY' in os.environ:
-    SECRET_KEY = os.environ["SECRET_KEY"]
+
 
 
 # Generally avoid wildcards(*). However since Heroku router provides hostname validation it is ok
-if IS_HEROKU:
-    ALLOWED_HOSTS = ["*"]
-else:
-    ALLOWED_HOSTS = []
 
-# SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU:
-    DEBUG = True
+ALLOWED_HOSTS = ['https://lucasedbraga-site.herokuapp.com/']
+
 
 # Application definition
 
@@ -146,3 +138,5 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ##########
+
+django_on_heroku.settings(locals())
