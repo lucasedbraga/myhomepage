@@ -22,7 +22,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 import os
 from django.test.runner import DiscoverRunner
 from pathlib import Path
-import django_heroku
+import django_on_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -140,29 +140,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
     ]
 
-django_heroku.settings(locals())
-
-# Enable WhiteNoise's GZip compression of static assets.
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
-
-# Test Runner Config
-class HerokuDiscoverRunner(DiscoverRunner):
-    """Test Runner for Heroku CI, which provides a database for you.
-    This requires you to set the TEST database (done for you by settings().)"""
-
-    def setup_databases(self, **kwargs):
-        self.keepdb = True
-        return super(HerokuDiscoverRunner, self).setup_databases(**kwargs)
-
-
-# Use HerokuDiscoverRunner on Heroku CI
-if "CI" in os.environ:
-    TEST_RUNNER = "interface.settings.HerokuDiscoverRunner"
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ##########
+django_on_heroku.settings(locals())
