@@ -8,8 +8,8 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 """
 
 
+from distutils.debug import DEBUG
 import os
-import django_on_heroku
 from pathlib import Path
 
 
@@ -23,11 +23,10 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'django-insecure-4pe*4_r6m-4y1fr8b+-^=2r1a@=kr1*tt248jmaj(7p23+ttnv'
 
 
-
-
 # Generally avoid wildcards(*). However since Heroku router provides hostname validation it is ok
 
-ALLOWED_HOSTS = ['https://lucasedbraga-site.herokuapp.com/']
+ALLOWED_HOSTS = []
+DEBUG =True
 
 
 # Application definition
@@ -85,14 +84,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'data/db.sqlite3'),
     }
 }
-if "DATABASE_URL" in os.environ:
-    # Configure Django for DATABASE_URL environment variable.
-    DATABASES["default"] = dj_database_url.config(
-        conn_max_age=MAX_CONN_AGE, ssl_require=True)
-
-    # Enable test database if found in CI environment.
-    if "CI" in os.environ:
-        DATABASES["default"]["TEST"] = DATABASES["default"]
 
 
 # Password validation
@@ -126,12 +117,9 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
     ]
-
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -139,4 +127,3 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ##########
 
-django_on_heroku.settings(locals())
