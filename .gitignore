@@ -1,1 +1,4 @@
 interface/data/db.sqlite3
+interface/interface/__pycache__
+interface/paginas/__pycache__
+interface/paginas/migrations/__pycache__
