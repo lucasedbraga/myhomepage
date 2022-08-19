@@ -1,1 +1,2 @@
-web: gunicorn interface.wsgi --log-file -
+web: gunicorn --pythonpath interface interface.wsgi --log-file - 
+release: python interface/manage.py makemigrations --no-input
