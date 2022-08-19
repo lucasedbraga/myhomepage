@@ -14,7 +14,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 100);
+      var value = Math.round(circle.value() * 2);
       circle.setText(value);
 
     }
@@ -34,7 +34,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 200);
+      var value = Math.round(circle.value() * 2);
       circle.setText(value);
 
     }
@@ -54,7 +54,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 300);
+      var value = Math.round(circle.value() * 10);
       circle.setText(value);
 
     }
@@ -74,7 +74,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 400);
+      var value = Math.round(circle.value() * 5);
       circle.setText(value);
 
     }
@@ -153,8 +153,8 @@ $( document ).ready(function() {
   let bannerSection = $('#mainSlider');
   let aboutSection = $('#about-area');
   let servicesSection = $('#services-area');
-  let teamSection = $('#team-area');
   let portfolioSection = $('#portfolio-area');
+  let dataSection = $('#data-area');
   let contactSection = $('#contact-area');
 
   let scrollTo = '';
@@ -168,9 +168,9 @@ $( document ).ready(function() {
     } else if(btnId == 'CAMPO3-menu') {
       scrollTo = servicesSection;
     } else if(btnId == 'CAMPO4-menu') {
-      scrollTo = teamSection;
+      scrollTo = portfolioSection
     } else if(btnId == 'CAMPO5-menu') {
-      scrollTo = portfolioSection;
+      scrollTo = dataSection;
     } else if(btnId == 'CAMPO6-menu') {
       scrollTo = contactSection;
     } else {

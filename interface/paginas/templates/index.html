@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NOME PAGINA INICIAL</title>
+        <title>Lucas E. S. Braga </title>
         <!-- Fonte -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
         <!-- Estilos -->
@@ -19,7 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0a703c298c.js" crossorigin="anonymous"></script>
         <!-- Progress Bar -->
         <script src="{% static 'js/progressbar.min.js' %}"></script>
         <!-- Parallax -->
@@ -34,7 +34,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <!-- Adicionando icone-->
                 <a href="#" class="navbar-brand">
-                    <img id="logo" src="{% static 'img/logo_svg.png' %}" alt="NOME EMPRESA">NOME EMPRESA
+                    <img id="logo" src="{% static 'img/logo_svg.png' %}" alt="Eng. Lucas E. S. Braga">Lucas Eduardo S. Braga
                 </a>
                 <!-- Adicionando Botao no Menu mobile -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
@@ -45,12 +45,12 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
                         <!-- Seções -->
-                        <a class="nav-item nav-link" id="CAMPO1-menu">CAMPO1</a>
-                        <a class="nav-item nav-link" id="CAMPO2-menu">CAMPO2</a>
-                        <a class="nav-item nav-link" id="CAMPO3-menu">CAMPO3</a>
-                        <a class="nav-item nav-link" id="CAMPO4-menu">CAMPO4</a>
-                        <a class="nav-item nav-link" id="CAMPO5-menu">CAMPO5</a>
-                        <a class="nav-item nav-link" id="CAMPO6-menu">CAMPO6</a>
+                        <a class="nav-item nav-link" id="CAMPO1-menu">Início</a>
+                        <a class="nav-item nav-link" id="CAMPO2-menu">Sobre</a>
+                        <a class="nav-item nav-link" id="CAMPO3-menu">Conhecimentos</a>
+                        <a class="nav-item nav-link" id="CAMPO4-menu">Atividades Desenvolvidas</a>
+                        <a class="nav-item nav-link" id="CAMPO5-menu">Produção Acadêmica</a>
+                        <a class="nav-item nav-link" id="CAMPO6-menu">Contato</a>
                     </div>
                 </div>
             </nav> 
@@ -112,21 +112,23 @@
         <div class="container">
             <div class="row">
               <div class="col-12"> 
-                <h3 class="main-title">SOBRE</h3>
+                <h3 class="main-title">Sobre</h3>
               </div>
               <div class="col-md-6">
                 <img class="img-fluid" src="{% static 'img/fig1.jpg' %}" alt="img1">
               </div>
               <div class="col-md-6">
-                <h3 class="about-title">TITULO SOBRE</h3>
-                <p>TEXTO SOBRE 1</p>
-                <p>TEXTO SOBRE 2</p>
-                <p>TEXTO SOBRE 3</p>
-                <p>LISTA SOBRE:</p>
+                <h3 class="about-title">Lucas Eduardo Silva Braga</h3>
+                <p>Bacharel formado em Engenharia Elétrica - Habilitação em Energia pela Univerdade Federal de Juiz de Fora - Minas Gerais, Brasil.</p>
+                <p>Entusiasta em temas relacionados a SmartGrids e desenvolvimento de Software voltados a Pesquisa Operacional e Sistemas Supervisórios.</p>
+
+                <p><b>Participações:</b></p>
                 <ul id="about-list">
-                  <li><i class="fas fa-check"></i> ITEM 1</li>
-                  <li><i class="fas fa-check"></i> ITEM 2</li>
-                  <li><i class="fas fa-check"></i> ITEM 3</li>
+                  <li><i class="fas fa-check"></i> Engenharia Elétrica - Habilitação em Energia (UFJF)</li>
+                  <li><i class="fas fa-check"></i> Bolsista pelo Grupo de Otimização e Heurística Bioinspirada (GOHB)</li>
+                  <li><i class="fas fa-check"></i> Pesquisador do Grupo de Estudos SMART4GRIDS</li>
+                  <li><i class="fas fa-check"></i> Presidente do capítulo estudantil IEEE PES UFJF em 2017</li>
+                  <li><i class="fas fa-check"></i> Voluntário do IEEE e PES desde 2015</li>
                 </ul>
               </div>
             </div>
@@ -137,108 +139,318 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-                <h3 class="main-title">TITULO SERVICOS</h3>
+                <h3 class="main-title">Conhecimentos</h3>
             </div>
             <div class="col-md-4 service-box">
                 <!-- Icone do FontAwsome -->
-              <i class="fas fa-mobile-alt"></i>
-              <h4>CELULAR</h4>
+              <i class="fa-brands fa-python"></i>
+              <h4>Desenvolvimento Python</h4>
               <p>TEXTO CELULAR</p>
             </div>
             <div class="col-md-4 service-box">
-              <i class="fas fa-shopping-cart"></i>
-              <h4>CARRINHO</h4>
+              <i class="fa-solid fa-arrow-up-right-dots"></i>
+              <h4>Métodos de Otimização</h4>
               <p>CARRINHO</p>
             </div>
             <div class="col-md-4 service-box">
-              <i class="fas fa-paint-brush"></i>
-              <h4>PINCEL</h4>
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              <h4>Análise de Dados</h4>
               <p>PINCEL</p>
             </div>
             <div class="col-md-4 service-box">
-              <i class="fab fa-google"></i>
-              <h4>GOOGLE</h4>
+              <i class="fa-solid fa-eye"></i>
+              <h4>Estimação de Estados</h4>
               <p>Google</p>
             </div>
             <div class="col-md-4 service-box">
-              <i class="fas fa-hands-helping"></i>
-              <h4>SUPORTE</h4>
+              <i class="fa-solid fa-bolt"></i>
+              <h4>Eficiência Energética</h4>
               <p>SUPORTE</p>
             </div>
             <div class="col-md-4 service-box">
-              <i class="fas fa-server"></i>
-              <h4>SERVIDORES</h4>
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+              <h4>Análise Tarifária</h4>
               <p>SERVIDORES</p>
             </div>
           </div>
         </div>
       </div>
+            <!-- Portfólio -->
+            <div id="portfolio-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="main-title">Atividades Desenvolvidas</h3>
+                  </div>
+                  <div class="col-md-12" id="filter-btn-box">
+                    <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                    <button class="main-btn filter-btn" id="G1-btn">Otimização</button>
+                    <button class="main-btn filter-btn" id="G2-btn">Análise de Dados</button>
+                    <button class="main-btn filter-btn" id="G3-btn">Eficiência Energética</button>
+                    <button class="main-btn filter-btn" id="G3-btn">Análise Tarifária</button>
+                  </div>
+                  <div class="col-md-4 project-box G1">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{% static 'img/proj1.jpg' %}" alt="Projeto 1" />
+                    </div>
+                  </div>
+                  <div class="col-md-4 project-box G2">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{% static 'img/proj2.jpg' %}" alt="Projeto 2" />
+                    </div>
+                  </div>
+                  <div class="col-md-4 project-box G3">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{% static 'img/proj3.jpg' %}" alt="Projeto 3" />
+                    </div>
+                  </div>
+                  <div class="col-md-4 project-box G1">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{% static 'img/proj4.jpg' %}" alt="Projeto 4" />
+                    </div>
+                  </div>
+                  <div class="col-md-4 project-box G2">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{% static 'img/proj5.jpg' %}" alt="Projeto 5" />
+                    </div>
+                  </div>
+                  <div class="col-md-4 project-box dev">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                      <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                          <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <img class="img-fluid" src="{% static 'img/proj6.jpg' %}" alt="Projeto 6" />
+                    </div>
+                  </div>
+                  <!-- Portfolio Modals-->
+                  <!-- Portfolio Modal 1-->
+                  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 1</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!-- Portfolio Modal - Image-->
+                                            <img class="img-fluid rounded mb-5" src="{% static 'img/proj1.jpg' %}" alt="..." />
+                                            <!-- Portfolio Modal - Text-->
+                                            <p class="mb-4">TEXTO 1</p>
+                                            <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- Portfolio Modal 2-->
+                  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                          <div class="modal-content">
+                              <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                              <div class="modal-body text-center pb-5">
+                                  <div class="container">
+                                      <div class="row justify-content-center">
+                                          <div class="col-lg-8">
+                                              <!-- Portfolio Modal - Title-->
+                                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 2</h2>
+                                              <!-- Icon Divider-->
+                                              <div class="divider-custom">
+                                                  <div class="divider-custom-line"></div>
+                                                  <div class="divider-custom-line"></div>
+                                              </div>
+                                              <!-- Portfolio Modal - Image-->
+                                              <img class="img-fluid rounded mb-5" src="{% static 'img/proj2.jpg' %}" alt="..." />
+                                              <!-- Portfolio Modal - Text-->
+                                              <p class="mb-4">TEXTO 2</p>
+                                              <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Portfolio Modal 3-->
+                  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                          <div class="modal-content">
+                              <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                              <div class="modal-body text-center pb-5">
+                                  <div class="container">
+                                      <div class="row justify-content-center">
+                                          <div class="col-lg-8">
+                                              <!-- Portfolio Modal - Title-->
+                                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 3</h2>
+                                              <!-- Icon Divider-->
+                                              <div class="divider-custom">
+                                                  <div class="divider-custom-line"></div>
+                                                  <div class="divider-custom-line"></div>
+                                              </div>
+                                              <!-- Portfolio Modal - Image-->
+                                              <img class="img-fluid rounded mb-5" src="{% static 'img/proj3.jpg' %}" alt="..." />
+                                              <!-- Portfolio Modal - Text-->
+                                              <p class="mb-4">TEXTO 3</p>
+                                              <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Portfolio Modal 4-->
+                  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                          <div class="modal-content">
+                              <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                              <div class="modal-body text-center pb-5">
+                                  <div class="container">
+                                      <div class="row justify-content-center">
+                                          <div class="col-lg-8">
+                                              <!-- Portfolio Modal - Title-->
+                                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 4</h2>
+                                              <!-- Icon Divider-->
+                                              <div class="divider-custom">
+                                                  <div class="divider-custom-line"></div>
+                                                  <div class="divider-custom-line"></div>
+                                              </div>
+                                              <!-- Portfolio Modal - Image-->
+                                              <img class="img-fluid rounded mb-5" src="{% static 'img/proj4.jpg' %}" alt="..." />
+                                              <!-- Portfolio Modal - Text-->
+                                              <p class="mb-4">TEXTO 4</p>
+                                              <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Portfolio Modal 5-->
+                  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                          <div class="modal-content">
+                              <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                              <div class="modal-body text-center pb-5">
+                                  <div class="container">
+                                      <div class="row justify-content-center">
+                                          <div class="col-lg-8">
+                                              <!-- Portfolio Modal - Title-->
+                                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 5</h2>
+                                              <!-- Icon Divider-->
+                                              <div class="divider-custom">
+                                                  <div class="divider-custom-line"></div>
+                                                  <div class="divider-custom-line"></div>
+                                              </div>
+                                              <!-- Portfolio Modal - Image-->
+                                              <img class="img-fluid rounded mb-5" src="{% static 'img/proj5.jpg' %}" alt="..." />
+                                              <!-- Portfolio Modal - Text-->
+                                              <p class="mb-4">TEXTO 5</p>
+                                              <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Portfolio Modal 6-->
+                  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                          <div class="modal-content">
+                              <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                              <div class="modal-body text-center pb-5">
+                                  <div class="container">
+                                      <div class="row justify-content-center">
+                                          <div class="col-lg-8">
+                                              <!-- Portfolio Modal - Title-->
+                                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 6</h2>
+                                              <!-- Icon Divider-->
+                                              <div class="divider-custom">
+                                                  <div class="divider-custom-line"></div>
+                                                  <div class="divider-custom-line"></div>
+                                              </div>
+                                              <!-- Portfolio Modal - Image-->
+                                              <img class="img-fluid rounded mb-5" src="{% static 'img/proj6.jpg' %}" alt="..." />
+                                              <!-- Portfolio Modal - Text-->
+                                              <p class="mb-4">TEXTO 6</p>
+                                              <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    <!-- Newsletter -->
+                    <div id="news-area">
+                        <div class="container">
+                            <div class="col-md-12">
+                            <h3 class="main-title">NOVIDADES</h3>
+                            </div>
+                            <p>TEXTO NOVIDADES</p>
+                            <form action="">
+                            <input type="text" class="form-control" id="email-input" name="email" placeholder="Digite seu e-mail">
+                            <input type="submit" id="news-btn" value="Inscrever">
+                            </form>
+                        </div>
+                        </div>
+                        <!-- Call to Action -->
+                        <div id="call-area">
+                        <div class="container">
+                            <div class="row">
+                                <p>TEXTO FINAL</p>
+                                <button class="main-btn" id="call-btn">BOTAO FINAL</button>
+                            </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       <!-- Dados da empresa -->
       <div id="data-area">
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-xs-6 circle-box">
               <div id="circleA"></div>
-              <p>DADO 1</p>
+              <p>Publicações em Revista</p>
             </div>
             <div class="col-md-3 col-xs-6 circle-box">
               <div id="circleB"></div>
-              <p>DADO 2</p>
+              <p>Participações em Congresso</p>
             </div>
             <div class="col-md-3 col-xs-6 circle-box">
               <div id="circleC"></div>
-              <p>DADO 3</p>
+              <p>Repositórios públicos no Github</p>
             </div>  
             <div class="col-md-3 col-xs-6 circle-box">
               <div id="circleD"></div>
-              <p>DADO 4</p>
+              <p>Projetos Desenvolvidos</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Time -->
-      <div id="team-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h3 class="main-title">PESSOAS</h3>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="{% static 'img/profile1.jpg' %}" class="card-img-top" alt="Imagem de Perfil 1">
-                <div class="card-body">
-                  <h5 class="card-title">PESSOA 1</h5>
-                  <p class="card-text">TEXTO PESSOA 1</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="{% static 'img/profile2.jpg' %}" class="card-img-top" alt="Imagem de Perfil 2">
-                <div class="card-body">
-                  <h5 class="card-title">PESSOA 2</h5>
-                  <p class="card-text">TEXTO PESSOA 2</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="{% static 'img/profile3.jpg' %}" class="card-img-top" alt="Imagem de Perfil 3">
-                <div class="card-body">
-                  <h5 class="card-title">PESSOA3</h5>
-                  <p class="card-text">TEXTO PESSOA 3</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                  <img src="{% static 'img/profile4.jpg' %}" class="card-img-top" alt="Imagem de Perfil 3">
-                  <div class="card-body">
-                    <h5 class="card-title">PESSOA 4</h5>
-                    <p class="card-text">TEXTO PESSOA 4</p>
-                  </div>
-                </div>
-              </div>
           </div>
         </div>
       </div>
@@ -248,266 +460,12 @@
           <div class="row">
             <div class="col-md-6 apply-box" id="company-img"></div>
             <div class="col-md-6 apply-box" id="pattern-img">
-              <h4>TITULO CONTEUDO 4</h4>
-              <p>TEXTO 1 CONTEUDO 4 </p>
-              <p>TEXTO 2 CONTEUDO 4</p>
-              <p>TEXTO 3 CONTEUDO 4</p>
-              <a href="#" class="main-btn" id="apply-btn">BOTAO 4</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Portfólio -->
-      <div id="portfolio-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="main-title">LISTA DE ITENS</h3>
-            </div>
-            <div class="col-md-12" id="filter-btn-box">
-              <button class="main-btn filter-btn active" id="all-btn">TODOS</button>
-              <button class="main-btn filter-btn" id="G1-btn">GRUPO 1</button>
-              <button class="main-btn filter-btn" id="G2-btn">GRUPO 2</button>
-              <button class="main-btn filter-btn" id="G3-btn">GRUPO 3</button>
-            </div>
-            <div class="col-md-4 project-box G1">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <img class="img-fluid" src="{% static 'img/proj1.jpg' %}" alt="Projeto 1" />
-              </div>
-            </div>
-            <div class="col-md-4 project-box G2">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <img class="img-fluid" src="{% static 'img/proj2.jpg' %}" alt="Projeto 2" />
-              </div>
-            </div>
-            <div class="col-md-4 project-box G3">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <img class="img-fluid" src="{% static 'img/proj3.jpg' %}" alt="Projeto 3" />
-              </div>
-            </div>
-            <div class="col-md-4 project-box G1">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <img class="img-fluid" src="{% static 'img/proj4.jpg' %}" alt="Projeto 4" />
-              </div>
-            </div>
-            <div class="col-md-4 project-box G2">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <img class="img-fluid" src="{% static 'img/proj5.jpg' %}" alt="Projeto 5" />
-              </div>
-            </div>
-            <div class="col-md-4 project-box dev">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <img class="img-fluid" src="{% static 'img/proj6.jpg' %}" alt="Projeto 6" />
-              </div>
-            </div>
-            <!-- Portfolio Modals-->
-            <!-- Portfolio Modal 1-->
-            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-                      <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                      <div class="modal-body text-center pb-5">
-                          <div class="container">
-                              <div class="row justify-content-center">
-                                  <div class="col-lg-8">
-                                      <!-- Portfolio Modal - Title-->
-                                      <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 1</h2>
-                                      <!-- Icon Divider-->
-                                      <div class="divider-custom">
-                                          <div class="divider-custom-line"></div>
-                                          <div class="divider-custom-line"></div>
-                                      </div>
-                                      <!-- Portfolio Modal - Image-->
-                                      <img class="img-fluid rounded mb-5" src="{% static 'img/proj1.jpg' %}" alt="..." />
-                                      <!-- Portfolio Modal - Text-->
-                                      <p class="mb-4">TEXTO 1</p>
-                                      <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <!-- Portfolio Modal 2-->
-            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 2</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="{% static 'img/proj2.jpg' %}" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="mb-4">TEXTO 2</p>
-                                        <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 3-->
-            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 3</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="{% static 'img/proj3.jpg' %}" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="mb-4">TEXTO 3</p>
-                                        <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 4-->
-            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 4</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="{% static 'img/proj4.jpg' %}" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="mb-4">TEXTO 4</p>
-                                        <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 5-->
-            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 5</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="{% static 'img/proj5.jpg' %}" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="mb-4">TEXTO 5</p>
-                                        <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Modal 6-->
-            <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                        <div class="modal-body text-center pb-5">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <!-- Portfolio Modal - Title-->
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ITEM 6</h2>
-                                        <!-- Icon Divider-->
-                                        <div class="divider-custom">
-                                            <div class="divider-custom-line"></div>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <!-- Portfolio Modal - Image-->
-                                        <img class="img-fluid rounded mb-5" src="{% static 'img/proj6.jpg' %}" alt="..." />
-                                        <!-- Portfolio Modal - Text-->
-                                        <p class="mb-4">TEXTO 6</p>
-                                        <button class="btn btn-primary" data-bs-dismiss="modal">Fechar Janela</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              <!-- Newsletter -->
-              <div id="news-area">
-                  <div class="container">
-                      <div class="col-md-12">
-                      <h3 class="main-title">NOVIDADES</h3>
-                      </div>
-                      <p>TEXTO NOVIDADES</p>
-                      <form action="">
-                      <input type="text" class="form-control" id="email-input" name="email" placeholder="Digite seu e-mail">
-                      <input type="submit" id="news-btn" value="Inscrever">
-                      </form>
-                  </div>
-                  </div>
-                  <!-- Call to Action -->
-                  <div id="call-area">
-                  <div class="container">
-                      <div class="row">
-                          <p>TEXTO FINAL</p>
-                          <button class="main-btn" id="call-btn">BOTAO FINAL</button>
-                      </div>
-                      </div>
-                  </div>
+              <h4>Principais Publicações</h4>
+              <p>(REVISTA 1): TITULO 1.</p>
+              <p>(REVISTA 2): TITULO 2</p>
+              <p>(CBIC 2021): Aplicação de Sistema Imunológico Artificial para Alocação Ótima de Medidores com Suporte de Rede Neural Artificial.</p>
+              <p>(SBAI 2021): Aplicação de Redes Neurais Artificiais com Tratamento de Erros via Z-Score em Sistemas de Distribuição de Energia Elétrica.</p>
+              <a href="http://lattes.cnpq.br/9379895832787188" class="main-btn" id="apply-btn">Acesse meu Lattes</a>
             </div>
           </div>
         </div>
@@ -518,35 +476,24 @@
     <div id="contact-area">
         <div class="container">
             <div class="row">
-            <div class="col-md-12">
-                <h3 class="main-title">TEXTO RODAPE</h3>
-            </div>
-            <div class="col-md-4 contact-box">
-                <i class="fas fa-phone"></i>
-                <p><span class="contact-tile">Contato:</span> (48)99999-9999</p>
-                <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
-            </div>
-            <div class="col-md-4 contact-box">
-              <h4 class="text-uppercase mb-4">Contato via Web</h4>
-              <a class="btn btn-outline-light btn-social mx-1" href="mailto:braga.lucas@engenharia.ufjf.br"><i class="fas fa-envelope"></i></a>
-              <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lucasedbraga/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-              <a class="btn btn-outline-light btn-social mx-1" href="http://lattes.cnpq.br/9379895832787188"><i class="fab fa-fw fa-dribbble"></i></a>
-            </div>
-            <div class="col-md-4 contact-box">
-                <i class="fas fa-map-marker-alt"></i>
-                <p><span class="contact-tile">Endereço:</span> Rua x - numero</p>
-            </div>
-            <div class="col-md-6" id="msg-box">
-                <p>Deixe uma mensagem:</p>
-            </div>
-            <div class="col-md-6" id="contact-form">
-                <form action="">
-                <input type="text" class="form-control" placeholder="E-mail" name="email">
-                <input type="text" class="form-control" placeholder="Assunto" name="subject">
-                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
-                <input type="submit" class="main-btn">
-                </form>
-            </div>
+              <div class="col-md-12">
+                  <h3 class="main-title">Entre em Contato</h3>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="fa-brands fa-telegram"></i>
+                  <p><span class="contact-tile">Contato:</span> +55 (32) 98874-9638</p>
+                  <p><span class="contact-tile">Horários:</span> 9:00 - 18:00</p>
+              </div>
+              <div class="col-md-4 contact-box">
+                <h4 class="text-uppercase mb-4">Contato via Web</h4>
+                <a class="btn btn-outline-light btn-social mx-1" href="mailto:braga.lucas@engenharia.ufjf.br"><i class="fas fa-envelope"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lucasedbraga/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/lucasedbraga"><i class="fab fa-fw fa-github"></i></a>
+              </div>
+              <div class="col-md-4 contact-box">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p><span class="contact-tile">Endereço:</span> Campus Universitário, Rua José Lourenço Kelmer, s/n - São Pedro, Juiz de Fora - MG, 36036-900</p>
+              </div>
             </div>
         </div>
     </div>
@@ -554,7 +501,7 @@
         <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p>Desenvolvido por <a href="https://www.linkedin.com/in/lucasedbraga/" target="_blank">Lucas E S Braga</a> &copy; 2022</p>
+                <p>Desenvolvido por <a href="https://github.com/lucasedbraga" target="_blank">Lucas E S Braga</a> &copy; 2022</p>
             </div>
         </div>
         </div>
