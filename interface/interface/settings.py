@@ -19,7 +19,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/topics/settings/
 """
 
-import dj_database_url
 import os
 from django.test.runner import DiscoverRunner
 from pathlib import Path
@@ -105,17 +104,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'data/db.sqlite3'),
     }
 }
-
-
-if "DATABASE_URL" in os.environ:
-    # Configure Django for DATABASE_URL environment variable.
-    DATABASES["default"] = dj_database_url.config(
-        conn_max_age=MAX_CONN_AGE, ssl_require=True)
-
-    # Enable test database if found in CI environment.
-    if "CI" in os.environ:
-        DATABASES["default"]["TEST"] = DATABASES["default"]
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
